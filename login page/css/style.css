@@ -1,0 +1,147 @@
+/* --- Base Layout --- */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* --- Container --- */
+.container-log form {
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+/* --- Input Fields --- */
+input {
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    color: #fff;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* --- Main Button --- */
+button {
+    background: rgba(255, 255, 255, 0.9);
+    color: #0072ff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    padding: 12px 0;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.4);
+}
+
+button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.2);
+}
+
+/* --- Text Heading --- */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 600;
+}
+
+/* --- Remember & Forgot Password --- */
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 20px;
+}
+
+.remember-forgot a {
+    color: rgba(255, 255, 255, 0.6); /* kelabu lembut */
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.remember-forgot a:hover {
+    color: #fff;
+}
+
+/* --- Divider (OR) --- */
+.divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px 0;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    position: relative;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.3);
+    margin: 0 10px;
+}
+
+/* --- Social Login --- */
+.social-login {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-login button {
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.9);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.social-login button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.4);
+}
+
+.social-login button:active {
+    transform: translateY(1px);
+}
+
+.social-login img {
+    width: 22px;
+    height: 22px;
+}
